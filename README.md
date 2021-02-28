@@ -20,4 +20,4 @@
 --------
 
 **Credits:**
-- iranathan: [robloxapi](https://github.com/iranathan/robloxapi) (modified)
+- [iranathan](https://github.com/iranathan): [robloxapi](https://github.com/iranathan/robloxapi) (modified)
