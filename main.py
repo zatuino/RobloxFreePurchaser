@@ -44,22 +44,6 @@ async def get_asset_page(session, next_page_cursor=None):
 
 
 
-async def get_owned_bundle_ids(user_id, session):
-    res = await session.get(f"https://catalog.roblox.com/v1/users/{user_id}/bundles?sortOrder=Asc&limit=100")
-    if res.status != 200:
-        raise RequestException("Bundles could not be retrieved.")
-
-    json = await res.json()
-
-    ids = set()
-    for i in json["data"]:
-        ids.add(i["id"])
-
-    return ids
-
-
-
-
 async def buy_limited(roblox, asset_id, data):
     while True:
         try:
