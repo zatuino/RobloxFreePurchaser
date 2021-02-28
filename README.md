@@ -4,7 +4,7 @@
 - [Python 3.7+](https://www.python.org/downloads/)
 - Dependencies outlined in requirements.txt
 
-
+-------
 
 **Instructions:**
 - Download/install Python 3.7+ if not done already;
@@ -17,6 +17,7 @@
 - If you already have the dependencies installed, run start.bat. 
 - Wait for completion; you should have a few accessory pages alongside some new packages and faces once the process finishes.
 
+--------
 
 **Credits:**
 - iranathan: [robloxapi](https://github.com/iranathan/robloxapi) (modified)
