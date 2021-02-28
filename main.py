@@ -76,6 +76,7 @@ async def buy_limited(roblox, asset_id, data):
 
 
 async def process_page(page, bundles, inventory_url, next_page_cursor, roblox, session):
+    count = 0
     for i in page:
         if type(i) == str: continue
 
@@ -95,6 +96,9 @@ async def process_page(page, bundles, inventory_url, next_page_cursor, roblox, s
             pass
 
         await buy_limited(asset_id=i, data=data, roblox=roblox)
+        count += 1
+
+    return count
 
 
 
@@ -135,9 +139,9 @@ async def on_ready():
         next_page_cursor = page["nextPageCursor"]
 
 
-    await asyncio.gather(*coroutines)
-
-    print("Completed!")
+    res = await asyncio.gather(*coroutines)
+    print(res)
+    print(f"Completed! Purchased {sum(res)} assets.")
     await session.close()
 
 
