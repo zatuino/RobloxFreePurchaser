@@ -107,7 +107,7 @@ async def on_ready():
         bundles = await roblox.get_owned_bundle_ids(user_id)
     except robloxapi.utils.errors.BadStatus as e:
         print(e)
-        bundles = {}
+        bundles = []
 
     inventory_url = f"https://api.roblox.com/ownership/hasasset?userId={user_id}&assetId="
 
