@@ -139,7 +139,7 @@ async def on_ready():
 
     print("Completed!")
     await session.close()
-z
+
 
 
 
