@@ -1,7 +1,7 @@
 # Buys all free on-sale catalog items created by ROBLOX.
 
 **Requirements:**
-- Python 3.7+
+- [Python 3.7+](https://www.python.org/downloads/)
 - Dependencies outlined in requirements.txt
 
 
